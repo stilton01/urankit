@@ -1,18 +1,9 @@
 {
-  "name": "urankit-react-app",
-  "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "name": "Elastic-Beanstalk-Sample-App",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified",
-    "start": "node src/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mongodb": "^4.1.4",
-    "nodemon": "^2.0.14"
+    "start": "node app.js"
   }
 }
