@@ -20,7 +20,7 @@ body {font-family: "Lato", sans-serif}
     <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large"></a>
         <a href="#overview" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OVERVIEW</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     </div>
@@ -28,7 +28,6 @@ body {font-family: "Lato", sans-serif}
 
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="#overview" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OVERVIEW</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">More</a>
     </div>
@@ -36,101 +35,44 @@ body {font-family: "Lato", sans-serif}
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-    <!-- The Band Section -->
+    <!-- Main Section -->
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="overview">
         <h2 class="w3-wide">Stephen Tilton</h2>
+        <img src="https://avatars.githubusercontent.com/u/37247644?s=400&u=a03bb16e58bf766e8ed14ed63cc895bd05c9ee2d&v=4"  class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
         <p class="w3-opacity"><i>Principal Data Engineer</i></p>
-        <p class="w3-justify">20 Years experience working in Financial Services industry focused on data intgration and data visulzation</p>
+        <p class="w3-center">Data Engineer focused on Financial Services data integration challenges</p>
         <div class="w3-row w3-padding-32">
         <div class="w3-third">
-            <p></p>
-            <a href="https://www.linkedin.com/in/stephentilton/details/experience/">
+          <p>Experience</p>
+          <a href="https://www.linkedin.com/in/stephentilton">
               <img src="https://cdn3.careeraddict.com/uploads/article/55295/work-experience-note-pinboard.jpg" class="w3-round w3-margin-bottom" alt="Experience" style="width:60%">
            </a>
         </div>
         <div class="w3-third">
             <p>Education</p>
-            <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-        </div>
+            <a href="www.husson.edu">
+            <img src="https://www.husson.edu/_global/images/logo/logogreen.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+           </a>
+          </div>
         <div class="w3-third">
             <p>Skills</p>
-            <img src="https://www.w3schools.com/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+            <a href="https://www.glassdoor.com/Job-Descriptions/Data-Engineer.htm">
+            <img src="https://www.import.io/wp-content/uploads/2019/09/data-analysis-blog.jpg" class="w3-round" alt="Random Name" style="width:60%">
+            </a>
+          </div>
         </div>
-        </div>
-    </div>
-  
-    <!-- The Contact Section -->
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-        <h2 class="w3-wide w3-center">CONTACT</h2>
-        <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-        <div class="w3-row w3-padding-32">
-        <div class="w3-col m6 w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker" style="width:30px"></i> Portland Maine<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> Email: stephen.d.tilton@gmail.com<br>
-        </div>
-        <div class="w3-col m6">
-            <form action="/action_page.php" target="_blank">
-            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                </div>
-                <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                </div>
-            </div>
-            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-            </form>
-        </div>
-        </div>
-    </div>
-
-
+        
     <!-- End Page Content -->
+
     </div>
-  
+   
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-    <i class="fa fa-github w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">2021</a></p>
-    </footer>
-
-    <script>
-      function onDragOver(event) {
-    event.preventDefault();
-  }
-
-  function onDrop(event) {
-  // ...
-
-  event
-    .dataTransfer
-    .clearData();
-}
-    </script>
-
-<div class="example-parent">
-  <div class="example-origin">
-    <div
-      id="draggable-1"
-      class="example-draggable"
-      draggable="true"
-      ondragstart="onDragStart(event);"
-    >
-      draggable
-    </div>
-  </div>
-
-  <div
-    class="example-dropzone"
-    ondragover="onDragOver(event);"
-    ondrop="onDrop(event);"
-  >
-    dropzone
-  </div>
-</div>
+      <a class="github" href="https://github.com/stilton01" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <a class="twitter" href="https://twitter.com/stephendtilton" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a class="linkedin" href="https://www.linkedin.com/in/stephentilton" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <p class="w3-medium">2021</a></p>
+      </footer>
 
     </body>
 </html>
