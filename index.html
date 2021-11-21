@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
 <title>Tilton Resume</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"\>
+
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -39,7 +43,7 @@ body {font-family: "Lato", sans-serif}
         <p class="w3-justify">20 Years experience working in Financial Services industry focused on data intgration and data visulzation</p>
         <div class="w3-row w3-padding-32">
         <div class="w3-third">
-            <p>Experience</p>
+            <p></p>
             <a href="https://www.linkedin.com/in/stephentilton/details/experience/">
               <img src="https://cdn3.careeraddict.com/uploads/article/55295/work-experience-note-pinboard.jpg" class="w3-round w3-margin-bottom" alt="Experience" style="width:60%">
            </a>
@@ -80,10 +84,11 @@ body {font-family: "Lato", sans-serif}
         </div>
         </div>
     </div>
-    
+
+
     <!-- End Page Content -->
     </div>
-
+  
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
     <i class="fa fa-github w3-hover-opacity"></i>
@@ -93,40 +98,39 @@ body {font-family: "Lato", sans-serif}
     </footer>
 
     <script>
-    // Automatic Slideshow - change image every 4 seconds
-    var myIndex = 0;
-    carousel();
+      function onDragOver(event) {
+    event.preventDefault();
+  }
 
-    function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-    }
+  function onDrop(event) {
+  // ...
 
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    var modal = document.getElementById('ticketModal');
-    window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    }
+  event
+    .dataTransfer
+    .clearData();
+}
     </script>
+
+<div class="example-parent">
+  <div class="example-origin">
+    <div
+      id="draggable-1"
+      class="example-draggable"
+      draggable="true"
+      ondragstart="onDragStart(event);"
+    >
+      draggable
+    </div>
+  </div>
+
+  <div
+    class="example-dropzone"
+    ondragover="onDragOver(event);"
+    ondrop="onDrop(event);"
+  >
+    dropzone
+  </div>
+</div>
 
     </body>
 </html>
